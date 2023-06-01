@@ -48,3 +48,12 @@ def change_contact(new: dict, index: int) -> str:
             contact['phone'] = new.get('phone', contact.get('phone'))
             contact['comment'] = new.get('comment', contact.get('comment'))
             return contact.get('name')
+
+def delete_contact(id = ''):
+    global phone_book
+    for contact in phone_book:
+        if id == contact.get('id'):
+            phone_book.remove(contact)
+            break
+
+
