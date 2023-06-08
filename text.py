@@ -38,9 +38,9 @@ def empty_search(word) -> str:
 
 change_contact = 'Введите новые данные или оставьте поле пустым, чтобы не менять: '
 
-def change_successfull(name) -> str:
+def change_successfull(name: str):
     return f'Контакт {name} успешно изменен'
 
-def delete_successfull(name) -> str:
+def delete_successfull(name: str):
     return f'Контакт {name} успешно удален'
 
